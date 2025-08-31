@@ -1,0 +1,10 @@
+21:04:37 **** Incremental Build of configuration Debug for project 01FreeRTOS_Segger ****
+make -j8 all 
+arm-none-eabi-size  01FreeRTOS_Segger.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25208	     96	  20968	  46272	   b4c0	01FreeRTOS_Segger.elf
+Finished building: default.size.stdout
+ 
+
+21:04:37 Build Finished. 0 errors, 0 warnings. (took 225ms)
+

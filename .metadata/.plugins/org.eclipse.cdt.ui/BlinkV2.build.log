@@ -1,0 +1,10 @@
+16:08:46 **** Incremental Build of configuration Debug for project BlinkV2 ****
+make -j8 all 
+arm-none-eabi-size  BlinkV2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6616	     12	   1572	   8200	   2008	BlinkV2.elf
+Finished building: default.size.stdout
+ 
+
+16:08:47 Build Finished. 0 errors, 0 warnings. (took 225ms)
+

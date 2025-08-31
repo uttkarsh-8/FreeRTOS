@@ -1,0 +1,10 @@
+03:00:31 **** Incremental Build of configuration Debug for project blink_corrected ****
+make -j8 all 
+arm-none-eabi-size  blink_corrected.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6488	     12	   1572	   8072	   1f88	blink_corrected.elf
+Finished building: default.size.stdout
+ 
+
+03:00:31 Build Finished. 0 errors, 0 warnings. (took 248ms)
+
