@@ -1,0 +1,10 @@
+23:21:39 **** Incremental Build of configuration Debug for project led_wiith_tasks ****
+make -j8 all 
+arm-none-eabi-size  led_wiith_tasks.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24516	    108	  20916	  45540	   b1e4	led_wiith_tasks.elf
+Finished building: default.size.stdout
+ 
+
+23:21:39 Build Finished. 0 errors, 0 warnings. (took 141ms)
+

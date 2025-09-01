@@ -1,12 +1,17 @@
-22:22:14 **** Incremental Build of configuration Debug for project PWMwithINT ****
+15:32:54 **** Build of configuration Debug for project PWMwithINT ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "PWMwithINT.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/uttkarsh_8/STM32CubeIDE/workspace_new/PWMwithINT/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PWMwithINT.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-/home/uttkarsh_8/st/stm32cubeide_1.19.0_2/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.linux64_1.0.0.202410170706/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/bin/ld: ./Core/Src/main.o: in function `main':
-/home/uttkarsh_8/STM32CubeIDE/workspace_new/PWMwithINT/Debug/../Core/Src/main.c:37:(.text.main+0x8): undefined reference to `SystemClock_Config'
-collect2: error: ld returned 1 exit status
-make: *** [makefile:64: PWMwithINT.elf] Error 1
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
+Finished building target: PWMwithINT.elf
+ 
+arm-none-eabi-size  PWMwithINT.elf 
+arm-none-eabi-objdump -h -S PWMwithINT.elf  > "PWMwithINT.list"
+   text	   data	    bss	    dec	    hex	filename
+  11580	     12	   1716	  13308	   33fc	PWMwithINT.elf
+Finished building: default.size.stdout
+ 
+Finished building: PWMwithINT.list
+ 
 
-22:22:14 Build Failed. 2 errors, 0 warnings. (took 736ms)
+15:32:54 Build Finished. 0 errors, 0 warnings. (took 610ms)
 

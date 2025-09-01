@@ -1,4 +1,4 @@
-19:27:59 **** Incremental Build of configuration Debug for project learnFreertos ****
+15:32:56 **** Incremental Build of configuration Debug for project learnFreertos ****
 make -j8 all 
 arm-none-eabi-gcc "../Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.d" -MT"Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.o"
 arm-none-eabi-gcc "../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.d" -MT"Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.o"
@@ -6,44 +6,29 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -I../Core/Inc -I../Drivers/STM3
 arm-none-eabi-gcc "../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_printf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_printf.d" -MT"Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_printf.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_printf.o"
 arm-none-eabi-gcc "../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.d" -MT"Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o"
 arm-none-eabi-gcc "../Middlewares/Third_Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.d" -MT"Middlewares/Third_Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.d" -MT"Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o"
+arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
 In file included from ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_ASM_ARMv7M.S:18:
 ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.h:60:10: fatal error: SEGGER_RTT_Conf.h: No such file or directory
    60 | #include "SEGGER_RTT_Conf.h"
       |          ^~~~~~~~~~~~~~~~~~~
 compilation terminated.
-make: *** [Middlewares/Third_Party/SEGGER/SEGGER/subdir.mk:34: Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_ASM_ARMv7M.o] Error 1
-arm-none-eabi-gcc "../Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.d" -MT"Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o"
-make: *** Waiting for unfinished jobs....
 In file included from ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.c:76:
-../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.h:60:10: fatal error: SEGGER_RTT_Conf.h: No such file or directory
-arm-none-eabi-gcc "../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
-   60 | #include "SEGGER_RTT_Conf.h"
-      |          ^~~~~~~~~~~~~~~~~~~
-compilation terminated.
-In file included from ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_printf.c:54:
 ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.h:60:10: fatal error: SEGGER_RTT_Conf.h: No such file or directory
    60 | #include "SEGGER_RTT_Conf.h"
       |          ^~~~~~~~~~~~~~~~~~~
 compilation terminated.
 make: *** [Middlewares/Third_Party/SEGGER/SEGGER/subdir.mk:32: Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.o] Error 1
-make: *** [Middlewares/Third_Party/SEGGER/SEGGER/subdir.mk:32: Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_printf.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Middlewares/Third_Party/SEGGER/SEGGER/subdir.mk:34: Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_ASM_ARMv7M.o] Error 1
 ../Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.c:59:10: fatal error: SEGGER_RTT.h: No such file or directory
    59 | #include "SEGGER_RTT.h"
       |          ^~~~~~~~~~~~~~
+In file included from ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_printf.c:54:
+../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT.h:60:10: fatal error: SEGGER_RTT_Conf.h: No such file or directory
+   60 | #include "SEGGER_RTT_Conf.h"
+      |          ^~~~~~~~~~~~~~~~~~~
 compilation terminated.
-make: *** [Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/subdir.mk:28: Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.o] Error 1
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:56,
-                 from ../Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c:54:
-../Core/Inc/FreeRTOSConfig.h:128:10: fatal error: SEGGER_SYSVIEW_FreeRTOS.h: No such file or directory
-  128 | #include "SEGGER_SYSVIEW_FreeRTOS.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-compilation terminated.
-make: *** [Middlewares/Third_Party/SEGGER/Config/subdir.mk:19: Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o] Error 1
-In file included from ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:56,
-                 from ../Middlewares/Third_Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.c:54:
-../Core/Inc/FreeRTOSConfig.h:128:10: fatal error: SEGGER_SYSVIEW_FreeRTOS.h: No such file or directory
-  128 | #include "SEGGER_SYSVIEW_FreeRTOS.h"
-      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
 In file included from ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.h:64,
                  from ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW_Int.h:64,
@@ -52,16 +37,31 @@ In file included from ../Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.h:
    59 | #include "Global.h"         // Type definitions: U8, U16, U32, I8, I16, I32
       |          ^~~~~~~~~~
 compilation terminated.
-make: *** [Middlewares/Third_Party/SEGGER/OS/subdir.mk:19: Middlewares/Third_Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o] Error 1
-make: *** [Middlewares/Third_Party/SEGGER/SEGGER/subdir.mk:32: Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o] Error 1
+make: *** [Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/subdir.mk:28: Middlewares/Third_Party/SEGGER/SEGGER/Syscalls/SEGGER_RTT_Syscalls_GCC.o] Error 1
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:56,
+                 from ../Middlewares/Third_Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.c:54:
+../Core/Inc/FreeRTOSConfig.h:128:10: fatal error: SEGGER_SYSVIEW_FreeRTOS.h: No such file or directory
+  128 | #include "SEGGER_SYSVIEW_FreeRTOS.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:56,
                  from ../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c:43:
 ../Core/Inc/FreeRTOSConfig.h:128:10: fatal error: SEGGER_SYSVIEW_FreeRTOS.h: No such file or directory
   128 | #include "SEGGER_SYSVIEW_FreeRTOS.h"
       |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
+compilation terminated.
+make: *** [Middlewares/Third_Party/SEGGER/SEGGER/subdir.mk:32: Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_SYSVIEW.o] Error 1
 make: *** [Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/subdir.mk:19: Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o] Error 1
+make: *** [Middlewares/Third_Party/SEGGER/OS/subdir.mk:19: Middlewares/Third_Party/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o] Error 1
+make: *** [Middlewares/Third_Party/SEGGER/SEGGER/subdir.mk:32: Middlewares/Third_Party/SEGGER/SEGGER/SEGGER_RTT_printf.o] Error 1
+In file included from ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:56,
+                 from ../Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.c:54:
+../Core/Inc/FreeRTOSConfig.h:128:10: fatal error: SEGGER_SYSVIEW_FreeRTOS.h: No such file or directory
+  128 | #include "SEGGER_SYSVIEW_FreeRTOS.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Middlewares/Third_Party/SEGGER/Config/subdir.mk:19: Middlewares/Third_Party/SEGGER/Config/SEGGER_SYSVIEW_Config_FreeRTOS.o] Error 1
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
 
-19:27:59 Build Failed. 17 errors, 0 warnings. (took 255ms)
+15:32:56 Build Failed. 17 errors, 0 warnings. (took 221ms)
 

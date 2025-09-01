@@ -35,17 +35,17 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  15 .debug_rnglists 00001030  00000000  00000000  00025ad8  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00003385  00000000  00000000  00026b08  2**0
+ 16 .debug_macro  0000335b  00000000  00000000  00026b08  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00016e01  00000000  00000000  00029e8d  2**0
+ 17 .debug_line   00016dcf  00000000  00000000  00029e63  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    000db31e  00000000  00000000  00040c8e  2**0
+ 18 .debug_str    000db348  00000000  00000000  00040c32  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  0011bfac  2**0
+ 19 .comment      00000043  00000000  00000000  0011bf7a  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00005abc  00000000  00000000  0011bff0  2**2
+ 20 .debug_frame  00005abc  00000000  00000000  0011bfc0  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 0000006c  00000000  00000000  00121aac  2**0
+ 21 .debug_line_str 0000006c  00000000  00000000  00121a7c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -402,7 +402,10 @@ int main(void)
  800054a:	f000 f8f3 	bl	8000734 <MX_GPIO_Init>
   MX_USART2_UART_Init();
  800054e:	f000 f8c7 	bl	80006e0 <MX_USART2_UART_Init>
-  /* USER CODE BEGIN 2 */
+//  DWT_CTR |= (1<<0);
+//
+//  SEGGER_SYSVIEW_Conf();
+//  SEGGER_SYSVIEW_Start();
 
   status = xTaskCreate(task1, "MyTask1", 100, NULL, 2, &task_handle1);
  8000552:	4b1f      	ldr	r3, [pc, #124]	@ (80005d0 <main+0x94>)
@@ -1032,7 +1035,7 @@ void HAL_MspInit(void)
  80008e6:	f000 fa39 	bl	8000d5c <HAL_NVIC_SetPriority>
 
   /* USER CODE BEGIN MspInit 1 */
-
+//  vInitPrioGroupValue();
   /* USER CODE END MspInit 1 */
 }
  80008ea:	bf00      	nop

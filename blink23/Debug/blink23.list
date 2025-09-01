@@ -444,7 +444,7 @@ int _write(int fd, char *ptr, int len) {
  80005e6:	607a      	str	r2, [r7, #4]
     HAL_StatusTypeDef hstatus;
 
-    if (fd == 1 || fd == 2) {   // stdout or stderr
+    if (fd == 1 || fd == 2) {
  80005e8:	68fb      	ldr	r3, [r7, #12]
  80005ea:	2b01      	cmp	r3, #1
  80005ec:	d002      	beq.n	80005f4 <_write+0x18>

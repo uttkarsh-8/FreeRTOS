@@ -1,10 +1,27 @@
-21:49:03 **** Incremental Build of configuration Debug for project blink23 ****
+15:32:54 **** Build of configuration Debug for project blink23 ****
 make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:139:7: warning: unused variable 'tickCounter' [-Wunused-variable]
+  139 |   int tickCounter = 0;
+      |       ^~~~~~~~~~~
+../Core/Src/main.c:138:21: warning: unused variable 'last_blink' [-Wunused-variable]
+  138 |   uint32_t now = 0, last_blink = 0;
+      |                     ^~~~~~~~~~
+../Core/Src/main.c:138:12: warning: unused variable 'now' [-Wunused-variable]
+  138 |   uint32_t now = 0, last_blink = 0;
+      |            ^~~
+arm-none-eabi-gcc -o "blink23.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/uttkarsh_8/STM32CubeIDE/workspace_new/blink23/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="blink23.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: blink23.elf
+ 
 arm-none-eabi-size  blink23.elf 
+arm-none-eabi-objdump -h -S blink23.elf  > "blink23.list"
    text	   data	    bss	    dec	    hex	filename
   15844	    104	   2056	  18004	   4654	blink23.elf
 Finished building: default.size.stdout
  
+Finished building: blink23.list
+ 
 
-21:49:04 Build Finished. 0 errors, 0 warnings. (took 230ms)
+15:32:55 Build Finished. 0 errors, 3 warnings. (took 563ms)
 
